@@ -1,6 +1,6 @@
 <?php
 
-namespace allenjd3\adminlte-laravel;
+namespace Allenjd3\Adminlte\src;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class AdminlteComponentProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__."vendor/allenjd3/adminlte-laravel/views", 'jd3_lte');
+        $this->loadViewsFrom(__DIR__.'/src/views', 'jd3_lte');
     }
 
     /**
