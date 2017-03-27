@@ -61,7 +61,7 @@ desired effect
 
   <!-- Content Wrapper. Contains page content -->
   
-  @include('partials.backend_content')
+  @yield('content')
 
   <!-- /.content-wrapper -->
 
