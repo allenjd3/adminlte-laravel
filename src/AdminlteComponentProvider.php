@@ -1,6 +1,6 @@
 <?php
 
-namespace Allenjd3\Adminlte\src;
+namespace Allenjd3\Adminlte;
 
 use Illuminate\Support\ServiceProvider;
 
