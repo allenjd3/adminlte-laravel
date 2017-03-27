@@ -13,7 +13,7 @@ class AdminlteComponentProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/src/views', 'jd3_lte');
+        $this->loadViewsFrom(__DIR__.'/views', 'jd3_lte');
     }
 
     /**

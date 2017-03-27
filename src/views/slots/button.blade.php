@@ -1,0 +1,1 @@
+<button type="submit" class="btn btn-{{$type or "primary"}}">{{$name}}</button>
