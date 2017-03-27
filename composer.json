@@ -1,0 +1,12 @@
+{
+    "name": "jimbolog/laravel-adminlte",
+    "description": "laravel 5.4 adminlte components",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Allen",
+            "email": "jacques2186@yahoo.com"
+        }
+    ],
+    "require": {}
+}
