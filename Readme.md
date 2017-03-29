@@ -2,7 +2,7 @@
 
 ## Installation
 
-requires Laravel >=5.4
+requires Laravel 5.4
 
 //This is where the install command for composer will go.
 
