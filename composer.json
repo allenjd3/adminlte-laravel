@@ -8,5 +8,12 @@
             "email": "jacques2186@yahoo.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+            "psr-4": {
+                    "Allenjd3\\Adminlte\\": "src/"
+                }
+            }
+            
+    }
 }
