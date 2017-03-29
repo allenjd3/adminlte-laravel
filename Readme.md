@@ -63,7 +63,26 @@ This will print the following
 This will print the following
 
 	<div class="checkbox">
-	<label>
-		<input type="checkbox"> {{$slot}}
-	</label>
+		<label>
+			<input type="checkbox" name="{{$name}}"> {{$slot}}
+		</label>
+	</div>
+
+//Possible spot for CK edit component. Add when problems of adding id to js component are fixed.
+
+### Form Component
+
+	@composer('jd3_lte::slots.form_component')
+		@slot('formId', 'form1') //mandatory
+		@slot('type', 'email') //defaults to text
+		@slot('placeholder','Your Email') //defaults to nothing
+		@slot('value', 'mrmagoo.aol.net') //defaults to nothing
+		//default slot is unused in this component
+	@endcomposer
+
+This will print the following
+
+	<div class="form-group">
+	  <label for="{{$formId}}">{{$label}}</label>
+	  <input type="{{$type or "text"}}" class="form-control" id="{{$formId}}" placeholder="{{$placeholder or ""}}" value="{{$value or ""}}">
 	</div>
