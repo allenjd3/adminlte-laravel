@@ -35,3 +35,20 @@ Within the content section of the extended backend, you can use the following co
 This will print the following
 
     <button type="submit" class="btn btn-{{$type or "primary"}}">{{$name}}</button>
+
+### Callout
+
+    @component('jd3_let::slots.callout')
+
+    	@slot('calloutType', 'danger') // defaults to primary
+
+    	This is where the body of the callout will be. 
+
+    @endcomponent
+
+This will print the following
+
+	<div class="callout callout-{{$calloutType or "primary"}}">
+		{{$slot}}
+	</div>
+
