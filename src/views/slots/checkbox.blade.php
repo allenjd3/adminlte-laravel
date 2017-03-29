@@ -1,5 +1,5 @@
 <div class="checkbox">
 	<label>
-		<input type="checkbox"> {{$slot}}
+		<input type="checkbox" name="{{$name}}"> {{$slot}}
 	</label>
 </div>

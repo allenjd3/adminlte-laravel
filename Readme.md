@@ -52,3 +52,18 @@ This will print the following
 		{{$slot}}
 	</div>
 
+### Checkbox
+
+	@component('jd3_lte::slots.checkbox')
+		@slot('name', 'check1') // This is mandatory
+		This will be the text of the checkbox.
+
+	@endcomponent
+
+This will print the following
+
+	<div class="checkbox">
+	<label>
+		<input type="checkbox"> {{$slot}}
+	</label>
+	</div>
