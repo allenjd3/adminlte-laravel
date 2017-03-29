@@ -21,38 +21,7 @@
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
-        @component('components.backend.left_sidebar_header')
-          HEADS
-        @endcomponent
-        <!-- Optionally, you can add icons to the links -->
-        @component('components.backend.left_sidebar_basic_link')
-          @slot('link')
-            http://www.weather.com
-          @endslot
-          @slot('icon')
-            fa fa-link
-          @endslot
-          My FaceBook
-        @endcomponent
-        @component('components.backend.left_sidebar_basic_link')
-          @slot('link')
-            http://www.weather.com
-          @endslot
-          @slot('icon')
-            fa fa-link
-          @endslot
-          Another Link
-        @endcomponent
-        @component('components.backend.left_sidebar_treeview_link')
-          @slot('icon')
-            fa fa-facebook
-          @endslot
-          @slot('dropdownLinks')
-           <li><a href="#">gah</a></li>
-           <li><a href="#">fah!</a></li>
-          @endslot
-          My Dropdowns
-        @endcomponent
+        @yield('left-sidebar')
       </ul>
       <!-- /.sidebar-menu -->
     </section>
