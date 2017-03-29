@@ -4,11 +4,15 @@
 
 requires Laravel 5.4
 
-//This is where the install command for composer will go.
+	composer require allenjd3/adminlte-laravel
 
 Add the service provider to your config/app.php
 
     Allenjd3\Adminlte\AdminlteComponentProvider::class,
+
+Publish the public assets (this has all the css and javascript files)
+
+	php artisan vendor:publish --tag=public
 
 ## 1. Extend the backend
 
@@ -191,6 +195,34 @@ This will print the following
 	    {{$dropdownLinks}}
 	  </ul>
 	</li>
+
+##Editing components and partials
+
+You can always publish all assets with
+
+	php artisan vendor:publish
+
+but this may publish other files that you may not want. If you would like to make modifications to the way things are displayed you can publish all of the files and make changes or only change the files you need to change. The choice is up to you.  There are many publish options. here is a quick list-
+
+	php artisan vendor:publish --tag=public
+	php artisan vendor:publish --tag=layouts //the entire layouts folder
+	php artisan vendor:publish --tag=slots //the entire slots folder
+	php artisan vendor:publish --tag=left-sidebar //the left sidebar partial
+	php artisan vendor:publish --tag=content //the content partial
+	php artisan vendor:publish --tag=footer //the footer partial
+	php artisan vendor:publish --tag=main-nav //the main nav partial
+	php artisan vendor:publish --tag=scripts //the scripts partial
+	php artisan vendor:publish --tag=searchform //the searchform partial
+	php artisan vendor:publish --tag=right-sidebar //the right sidebar partial
+	php artisan vendor:publish --tag=button //the button component
+	php artisan vendor:publish --tag=callout //the callout component
+	php artisan vendor:publish --tag=checkbox //the checkbox component
+	php artisan vendor:publish --tag=ck-edit //the ck-edit component
+	php artisan vendor:publish --tag=content-box //the content box component
+	php artisan vendor:publish --tag=form-component //the form component component
+	php artisan vendor:publish --tag=link //the link sidebar component
+	php artisan vendor:publish --tag=treeview // the treeview sidebar component
+	php artisan vendor:publish --tag=header-left //the header left sidebar component
 
 allenjd3/adminlte-laravel is under the MIT license
 
