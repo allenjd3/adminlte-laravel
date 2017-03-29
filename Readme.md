@@ -132,7 +132,7 @@ This will print the following
 
 Within the left-sidebar section of the extended backend, you can use the following components.
 
-### Left Sidbar Basic Link
+### Left Sidebar Basic Link
 
 	@component('jd3_lte::slots.left_sidebar_basic_link')
 
@@ -150,4 +150,42 @@ This will print the following
 			<i class="{{$icon}}"></i> 
 			<span>{{$slot}}</span>
 		</a>
+	</li>
+
+### Left Sidebar Header
+
+	@component('jd3_lte::slots.left_sidebar_header')
+
+		//This is where the content of the header will go
+
+	@endcomponent
+
+This will print the following
+
+	<li class="header">{{$slot}}</li>
+
+### Left Sidebar Treeview
+
+	@component('jd3_lte::slots.left_sidebar_treeview_link')
+		@slot('icon', 'fa fa-link') //favicon class for icon
+		@slot('dropdownLinks')
+			<li><a href="#">These will </a></li>
+			<li><a href="#">Drop Down </a></li>
+		@endslot
+
+		This is the link text.
+
+	@endcomponent
+
+This will print the following
+
+	<li class="treeview">
+	  <a href="#"><i class="{{$icon}}"></i> <span>{{$slot}}</span>
+	    <span class="pull-right-container">
+	      <i class="fa fa-angle-left pull-right"></i>
+	    </span>
+	  </a>
+	  <ul class="treeview-menu">
+	    {{$dropdownLinks}}
+	  </ul>
 	</li>
