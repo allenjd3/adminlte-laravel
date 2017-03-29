@@ -18,13 +18,13 @@ class AdminlteComponentProvider extends ServiceProvider
         	__DIR__.'/dist' => public_path('/dist'),
     	], 'public');
     	$this->publishes([
-        	__DIR__.'/views/layouts' => resource_path('/views/vendor/allenjd3/layouts'),
+        	__DIR__.'/views/layouts' => resource_path('/views/vendor/jd3_lte/layouts'),
     	], 'layouts');
     	$this->publishes([
-        	__DIR__.'/views/slots' => resource_path('/views/vendor/allenjd3/slots'),
+        	__DIR__.'/views/slots' => resource_path('/views/vendor/jd3_lte/slots'),
     	], 'slots');
     	$this->publishes([
-        	__DIR__.'/views/partials' => resource_path('/views/vendor/allenjd3/partials'),
+        	__DIR__.'/views/partials' => resource_path('/views/vendor/jd3_lte/partials'),
     	], 'partials');
     	
     }
