@@ -14,6 +14,9 @@ class AdminlteComponentProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/views', 'jd3_lte');
+        $this->publishes([
+        	__DIR__.'/dist' => public_path('/dist'),
+    	], 'public');
     }
 
     /**
