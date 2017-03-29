@@ -15,7 +15,7 @@
   </div>
   <!-- /.box-body -->
   <div class="box-footer">
-    {{$footer}}
+    {{$footer or ""}}
   </div>
   <!-- /.box-footer-->
 </div>

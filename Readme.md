@@ -70,15 +70,50 @@ This will print the following
 
 //Possible spot for CK edit component. Add when problems of adding id to js component are fixed.
 
+### Content Box
+
+	@component('jd3_lte::slots.content_box')
+		@slot('title', 'My great box')
+		@slot('footer', 'That was great wasn\'t it?') //This defaults to nothing
+
+		//This is where the bulk of your content will go. This is a good wrapper for the rest of your components.
+
+	@endcomponent
+
+This will print the following
+
+	<!-- Default box -->
+	<div class="box">
+	  <div class="box-header with-border">
+	    <h3 class="box-title">{{$title}}</h3>
+
+	    <div class="box-tools pull-right">
+	      <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+	        <i class="fa fa-minus"></i></button>
+	      <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+	        <i class="fa fa-times"></i></button>
+	    </div>
+	  </div>
+	  <div class="box-body">
+	    {{$slot}}
+	  </div>
+	  <!-- /.box-body -->
+	  <div class="box-footer">
+	    {{$footer or ""}}
+	  </div>
+	  <!-- /.box-footer-->
+	</div>
+	<!-- /.box -->
+
 ### Form Component
 
-	@composer('jd3_lte::slots.form_component')
+	@component('jd3_lte::slots.form_component')
 		@slot('formId', 'form1') //mandatory
 		@slot('type', 'email') //defaults to text
 		@slot('placeholder','Your Email') //defaults to nothing
 		@slot('value', 'mrmagoo.aol.net') //defaults to nothing
 		//default slot is unused in this component
-	@endcomposer
+	@endcomponent
 
 This will print the following
 
