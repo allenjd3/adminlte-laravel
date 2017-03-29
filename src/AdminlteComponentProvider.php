@@ -17,6 +17,16 @@ class AdminlteComponentProvider extends ServiceProvider
         $this->publishes([
         	__DIR__.'/dist' => public_path('/dist'),
     	], 'public');
+    	$this->publishes([
+        	__DIR__.'/views/layouts' => resource_path('/views/layouts'),
+    	], 'layouts');
+    	$this->publishes([
+        	__DIR__.'/views/slots' => resource_path('/views/slots'),
+    	], 'slots');
+    	$this->publishes([
+        	__DIR__.'/views/partials' => resource_path('/views/partials'),
+    	], 'partials');
+    	
     }
 
     /**
