@@ -189,3 +189,7 @@ This will print the following
 	    {{$dropdownLinks}}
 	  </ul>
 	</li>
+
+allenjd3/adminlte-laravel is under the MIT license
+
+Pull requests are welcome but keep the features simple and related. I don't want to have too much scope creep.
