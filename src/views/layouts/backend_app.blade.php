@@ -55,7 +55,7 @@ desired effect
 <div class="wrapper">
 
   <!-- Main Header -->
-  @include('partials.backend_main_nav')
+  @include('jd3_lte::partials.backend_main_nav')
   <aside class="main-sidebar">
 
     <!-- sidebar: style can be found in sidebar.less -->
@@ -73,7 +73,7 @@ desired effect
         </div>
       </div>
             <!-- search form (Optional) -->
-      @include('partials.backend_sidebar_left_searchform')
+      @include('jd3_lte::partials.backend_sidebar_left_searchform')
       <!-- /.search form -->
 
       <!-- Sidebar Menu -->
@@ -106,10 +106,10 @@ desired effect
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  @include('partials.backend_footer')
+  @include('jd3_lte::partials.backend_footer')
 
   <!-- Control Sidebar -->
-  @include('partials.backend_sidebar_right')
+  @include('jd3_lte::partials.backend_sidebar_right')
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
