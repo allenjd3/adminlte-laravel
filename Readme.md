@@ -16,6 +16,14 @@ First you are going to want to extend the backend.
 
 ## 2. Insert components
 
+	@section('left-sidebar')
+
+		//insert your links here.
+
+	@endsection
+
+The components that you can include in the sidebar are below
+
     @section('content')
 
         //insert your content here.
@@ -121,3 +129,25 @@ This will print the following
 	  <label for="{{$formId}}">{{$label}}</label>
 	  <input type="{{$type or "text"}}" class="form-control" id="{{$formId}}" placeholder="{{$placeholder or ""}}" value="{{$value or ""}}">
 	</div>
+
+Within the left-sidebar section of the extended backend, you can use the following components.
+
+### Left Sidbar Basic Link
+
+	@component('jd3_lte::slots.left_sidebar_basic_link')
+
+		@slot('link', 'http://www.weather.com') // this is where your link will go
+		@slot('icon', 'fa fa-link') // This is a favicon that you can add to the left of the link
+
+		//This is where the Text of the link will be
+
+	@endcomponent
+
+This will print the following
+
+	<li class="active">
+		<a href="{{$link}}">
+			<i class="{{$icon}}"></i> 
+			<span>{{$slot}}</span>
+		</a>
+	</li>
