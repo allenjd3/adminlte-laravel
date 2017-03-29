@@ -26,7 +26,9 @@ class AdminlteComponentProvider extends ServiceProvider
     	$this->publishes([
         	__DIR__.'/views/partials' => resource_path('/views/vendor/jd3_lte/partials'),
     	], 'partials');
-    	
+    	$this->publishes([
+        	__DIR__.'/views/partials/backend_left_sidebar.blade.php' => resource_path('/views/vendor/jd3_lte/partials/backend_left_sidebar.blade.php'),
+    	], 'left-sidebar');    	
     }
 
     /**
