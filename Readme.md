@@ -1,6 +1,8 @@
-# Super Simple AdminLTE package for quick AdminLTE backends.
+# Super Simple AdminLTE package for quick AdminLTE backends. 
 
 ## Installation
+
+requires Laravel >=5.4
 
 //This is where the install command for composer will go.
 
