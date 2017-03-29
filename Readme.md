@@ -196,7 +196,7 @@ This will print the following
 	  </ul>
 	</li>
 
-##Editing components and partials
+## Editing components and partials
 
 You can always publish all assets with
 
