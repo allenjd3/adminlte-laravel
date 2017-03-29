@@ -16,7 +16,7 @@
       </div>
 
       <!-- search form (Optional) -->
-      @include('partials.backend_sidebar_left_searchform')
+      @include('jd3_lte::partials.backend_sidebar_left_searchform')
       <!-- /.search form -->
 
       <!-- Sidebar Menu -->
