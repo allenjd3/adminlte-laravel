@@ -18,7 +18,7 @@ Publish the public assets (this has all the css and javascript files)
 
 First you are going to want to extend the backend.
 
-    @extend('jd3_lte::layouts.backend_app')
+    @extends('jd3_lte::layouts.backend_app')
 
 ## 2. Insert components
 

@@ -1,6 +1,6 @@
 @component('jd3_lte::slots.content_box')
 @slot('title', 'Login')
-
+<div class="col-xs-6 col-xs-offset-3">
 <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
     {{ csrf_field() }}
 
@@ -19,7 +19,7 @@
     </div>
 
     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-        <label for="password" class="col-md-4 control-label">Password</label>
+        <label for="password" class="control-label">Password</label>
 
        
             <input id="password" type="password" class="form-control" name="password" required>
@@ -54,3 +54,5 @@
         
     </div>
 </form>
+</div>
+@endcomponent
