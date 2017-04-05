@@ -53,7 +53,7 @@ The components that you can include in the sidebar are listed below the content 
 
 Within the content section of the extended backend, you can use the following components.
 
-## Insert Components
+## 3. Insert Components
 
 ### Button
 
