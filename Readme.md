@@ -30,6 +30,8 @@ These sections have default values that can be overidden.
 	@section('main_footer','Copyright 1212') //this is the copyright area
 	@section('right_footer','A right side footer') //This is the right footer area
 	@section('profile_link','mylink.com') //this is the profile url in the admin dropdown
+	@section('content_header', 'The Body') //this is the Header of the main content area
+	@section('content_sub_header', 'Sub Header') //This is the sub header of the main content area
 
 ### Left Sidebar section
 
