@@ -3,8 +3,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        @yield('content_header', 'Page Header')
+        <small>@yield('content_sub_header', '')</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -14,6 +14,7 @@
 
     <!-- Main content -->
     <section class="content">
+    
   @yield('content')
     </section>
   </div>
