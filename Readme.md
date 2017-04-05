@@ -20,7 +20,7 @@ First you are going to want to extend the backend.
 
     @extends('jd3_lte::layouts.backend_app')
 
-## 2. Insert components
+## 2. Insert sections
 
 ### Miscellaneous sections
 
@@ -53,7 +53,7 @@ The components that you can include in the sidebar are listed below the content 
 
 Within the content section of the extended backend, you can use the following components.
 
-
+## Insert Components
 
 ### Button
 
