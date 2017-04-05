@@ -22,13 +22,26 @@ First you are going to want to extend the backend.
 
 ## 2. Insert components
 
+### Miscellaneous sections
+
+These sections have default values that can be overidden.
+
+	@section('image_uri','example.com') //add url for your user image here
+	@section('main_footer','Copyright 1212') //this is the copyright area
+	@section('right_footer','A right side footer') //This is the right footer area
+	@section('profile_link','mylink.com') //this is the profile url in the admin dropdown
+
+### Left Sidebar section
+
 	@section('left-sidebar')
 
 		//insert your links here.
 
 	@endsection
 
-The components that you can include in the sidebar are below
+The components that you can include in the sidebar are listed below the content area.
+
+### The Main Content Area
 
     @section('content')
 
@@ -37,6 +50,8 @@ The components that you can include in the sidebar are below
     @endsection
 
 Within the content section of the extended backend, you can use the following components.
+
+
 
 ### Button
 
