@@ -241,6 +241,24 @@ but this may publish other files that you may not want. If you would like to mak
 	php artisan vendor:publish --tag=treeview // the treeview sidebar component
 	php artisan vendor:publish --tag=header-left //the header left sidebar component
 
+##Quick template with defaults
+
+Just copy and paste
+
+	@extends('jd3_lte::layouts.backend_app')
+	@section('image_uri','https://upload.wikimedia.org/wikipedia/commons/b/b1/James_Allen.jpg') 
+	@section('main_footer','Copyright 1212') 
+	@section('right_footer','A right side footer') 
+	@section('profile_link','mylink.com') 
+	@section('content_header', 'The Body') 
+	@section('content_sub_header', 'Sub Header') 
+	@section('content')
+		<h1>This is some content</h1>
+	@endsection
+	@section('left-sidebar')
+		<li><a href="#">My link</a></li>
+	@endsection
+
 allenjd3/adminlte-laravel is under the MIT license
 
 Pull requests are welcome but keep the features simple and related. I don't want to have too much scope creep.
