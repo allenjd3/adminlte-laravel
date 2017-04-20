@@ -241,7 +241,7 @@ but this may publish other files that you may not want. If you would like to mak
 	php artisan vendor:publish --tag=treeview // the treeview sidebar component
 	php artisan vendor:publish --tag=header-left //the header left sidebar component
 
-##Quick template with defaults
+## Quick template with defaults
 
 Just copy and paste
 
@@ -258,6 +258,18 @@ Just copy and paste
 	@section('left-sidebar')
 		<li><a href="#">My link</a></li>
 	@endsection
+
+## Login and Register Partials
+
+For your convenience I have included a login form and register form for quickly modifying the look of your backend login.
+
+	// include login section. Should be placed within a content area.
+
+	@include('jd3_lte::partials.backend_login')
+
+	// include register section. Should be placed within a content area.
+
+	@include('jd3_lte::partials.backend_register')
 
 allenjd3/adminlte-laravel is under the MIT license
 
